@@ -21,17 +21,24 @@
   }
 
   .container {
-    width: 1400px;
+    // width: 1400px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    margin: 20px;
 
     .logo {
       font-size: 34px;
       font-weight: bold;
 
-      .text {
+      // .text {
+      // }
+
+      img {
+        height: 39px;
+        // margin-right: -11px;
+        // margin-top: 5px;
       }
 
       .dot {
@@ -91,8 +98,10 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #1dbf73;
-          border-color: #1dbf73;
+          // background-color: #1dbf73;
+          // border-color: #1dbf73;
+          background-color: rgb(56, 127, 215);
+          border-color: rgb(56, 127, 215);
         }
       }
     }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 import "./Navbar.scss";
+import logo_image from "../../../public/img/sindesi_logo_white.svg";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -39,15 +40,16 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="text">fiverr</span>
+            <img src={logo_image} alt="" />
+            {/* <span className="text">Sindesi</span> */}
           </Link>
-          <span className="dot">.</span>
+          {/* <span className="dot">.</span> */}
         </div>
         <div className="links">
-          <span>Fiverr Business</span>
-          <span>Explore</span>
-          <span>English</span>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {/* <span>Fiverr Business</span>
+          <span>Explore</span> */}
+          <span>Warum Sindesi</span>
+          {!currentUser?.isSeller && <span>Provider werden</span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
@@ -78,9 +80,9 @@ function Navbar() {
             </div>
           ) : (
             <>
-              <Link to="/login" className="link">Sign in</Link>
+              <Link to="/login" className="link">Anmelden</Link>
               <Link className="link" to="/register">
-                <button>Join</button>
+                <button>Registrieren</button>
               </Link>
             </>
           )}
