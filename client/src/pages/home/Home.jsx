@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="home">
       <Featured />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
       <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
@@ -20,38 +20,28 @@ function Home() {
       <div className="features">
         <div className="container">
           <div className="item">
-            <h1>A whole world of freelance talent at your fingertips</h1>
+            <h1>Eine menge grandioser Dienstleistungen, eifach abrufbar.</h1>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              The best for every budget
+              Abgebote für alle Budgets
             </div>
             <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+              Finde qulitativ hochwertige Services zu allen Preisklassen, kein Stundentarif, nur Projekt-basierte kosten.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Quality work done quickly
+              Gut und schnell erleldigt.
             </div>
             <p>
-              Find the right freelancer to begin working on your project within
-              minutes.
+              Finde den richtigen Dienstleister und beginne die arbeit deines Projektes in Minuten.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Protected payments, every time
+              Geschützte bezahlungen, jedes mal.
             </div>
             <p>
-              Always know what you'll pay upfront. Your payment isn't released
-              until you approve the work.
-            </p>
-            <div className="title">
-              <img src="./img/check.png" alt="" />
-              24/7 support
-            </div>
-            <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+              Immer im Voraus wissen, was bezahlt wird.
+              Die Zahlung wird erst nach deiner bestätigung der Auftragserledigung an den Käufer ausgezahlt.
             </p>
           </div>
           <div className="item">

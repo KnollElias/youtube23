@@ -15,8 +15,33 @@
 
     button {
       background-color: white !important;
-      color: #1dbf73 !important;
-      border: 1px solid #1dbf73 !important;
+      color: rgb(56, 127, 215) !important;
+      border: 1px solid rgb(56, 127, 215) !important;
+    }
+
+    .container {
+      .logo {
+        a {
+          #dl {
+            display: block;
+          }
+          #ll {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .container {
+    .logo {
+      a {
+        #dl {
+          display: none;
+        }
+        #ll {
+          display: block;
+        }
+      }
     }
   }
 
@@ -40,6 +65,7 @@
         // margin-right: -11px;
         // margin-top: 5px;
       }
+
 
       .dot {
         font-weight: bold;

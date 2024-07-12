@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 import "./Navbar.scss";
-import logo_image from "../../../public/img/sindesi_logo_white.svg";
+import light_logo_image from "../../../public/img/sindesi_logo_white.svg";
+import dark_logo_image from "../../../public/img/sindesi_logo_black.svg";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -40,7 +41,8 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <img src={logo_image} alt="" />
+            <img id="ll" src={light_logo_image} alt="" />
+            <img id="dl" src={dark_logo_image} alt="" />
             {/* <span className="text">Sindesi</span> */}
           </Link>
           {/* <span className="dot">.</span> */}
