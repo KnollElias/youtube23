@@ -13,7 +13,7 @@ function MyGigs() {
   const { isLoading, error, data } = useQuery({
     queryKey: ["myGigs"],
     queryFn: () =>
-      newRequest.get(`/gigs?userId=${currentUser.id}`).then((res) => {
+      newRequest.get(`/gigs?userId=${currentUser._id}`).then((res) => {
         return res.data;
       }),
   });
@@ -43,17 +43,17 @@ function MyGigs() {
             <h1>Gigs</h1>
             {currentUser.isSeller && (
               <Link to="/add">
-                <button>Add New Gig</button>
+                <button>Neue Dienstleistung hinzufügen</button>
               </Link>
             )}
           </div>
           <table>
             <tr>
-              <th>Image</th>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Sales</th>
-              <th>Action</th>
+              <th>Bild</th>
+              <th>Titel</th>
+              <th>Preis</th>
+              <th>Verkäufe</th>
+              <th>Aktion</th>
             </tr>
             {data.map((gig) => (
               <tr key={gig._id}>
