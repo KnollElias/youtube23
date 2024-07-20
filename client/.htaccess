@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /data/sites/web/knollbackend1ch/www/.htpasswd
+Require valid-user
