@@ -52,14 +52,14 @@ function Register() {
           <input
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="Benutzername"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
           <input
             name="email"
             type="email"
-            placeholder="email"
+            placeholder="Email"
             onChange={handleChange}
           />
           <label htmlFor="">Passwort</label>
@@ -70,7 +70,7 @@ function Register() {
           <input
             name="country"
             type="text"
-            placeholder="Usa"
+            placeholder="Schweiz"
             onChange={handleChange}
           />
           <button type="submit">Registrieren</button>
@@ -88,12 +88,12 @@ function Register() {
           <input
             name="phone"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="+41 079 111 22 33"
             onChange={handleChange}
           />
-          <label htmlFor="">Profiloe Beschribung</label>
+          <label htmlFor="">Profil Beschribung</label>
           <textarea
-            placeholder="A short description of yourself"
+            placeholder="Eine kurze Beschreibung über dich"
             name="desc"
             id=""
             cols="30"

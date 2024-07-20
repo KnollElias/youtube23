@@ -39,9 +39,9 @@ const Message = () => {
   return (
     <div className="message">
       <div className="container">
-        <span className="breadcrumbs">
+        {/* <span className="breadcrumbs">
           <Link to="/messages">Messages</Link> > John Doe >
-        </span>
+        </span> */}
         {isLoading ? (
           "loading"
         ) : error ? (
