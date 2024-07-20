@@ -12,28 +12,28 @@ function Featured() {
   return (
     <div className="featured">
       <div className="container">
-        <div className="left">
+        <div className="center">
           <h1>
-            Finde die perfekten <span>Dienstleister</span> in deiner Nähe
+            Finde die passenden <span>Dienstleister</span> in deiner Nähe
           </h1>
           <div className="search">
             <div className="searchInput">
               <img src="./img/search.png" alt="" />
               <input
                 type="text"
-                placeholder='Versuche "Gärtner Rasenmähen"'
+                placeholder='Gärtner Rasenmähen'
                 onChange={(e) => setInput(e.target.value)}
               />
             </div>
             <button onClick={handleSubmit}>Suchen</button>
           </div>
-          <div className="popular">
+          {/* <div className="popular">
             <span>Beliegte Kategorien:</span>
             <button>Web Design</button>
             <button>WordPress</button>
             <button>Logo Design</button>
             <button>AI Services</button>
-          </div>
+          </div> */}
         </div>
         <div className="right">
           <img src="./img/man.png" alt="" />
