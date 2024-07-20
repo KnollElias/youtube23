@@ -68,31 +68,31 @@ const Add = () => {
   return (
     <div className="add">
       <div className="container">
-        <h1>Add New Gig</h1>
+        <h1>Neue Dienstleistung erstellen</h1>
         <div className="sections">
           <div className="info">
-            <label htmlFor="">Title</label>
+            <label htmlFor="">Titel</label>
             <input
               type="text"
               name="title"
-              placeholder="e.g. I will do something I'm really good at"
+              placeholder="Ich werde eine Website mit hochmodernem Deisgn erstellen."
               onChange={handleChange}
             />
-            <label htmlFor="">Category</label>
+            <label htmlFor="">Kateorie</label>
             <select name="cat" id="cat" onChange={handleChange}>
               <option value="design">Design</option>
               <option value="web">Web Development</option>
               <option value="animation">Animation</option>
-              <option value="music">Music</option>
+              <option value="music">Musik</option>
             </select>
             <div className="images">
               <div className="imagesInputs">
-                <label htmlFor="">Cover Image</label>
+                <label htmlFor="">Vorschaubild</label>
                 <input
                   type="file"
                   onChange={(e) => setSingleFile(e.target.files[0])}
                 />
-                <label htmlFor="">Upload Images</label>
+                <label htmlFor="">Bilder hochladen</label>
                 <input
                   type="file"
                   multiple
@@ -100,48 +100,48 @@ const Add = () => {
                 />
               </div>
               <button onClick={handleUpload}>
-                {uploading ? "uploading" : "Upload"}
+                {uploading ? "lädt hoch..." : "Hochladen"}
               </button>
             </div>
-            <label htmlFor="">Description</label>
+            <label htmlFor="">Beschribung</label>
             <textarea
               name="desc"
               id=""
-              placeholder="Brief descriptions to introduce your service to customers"
+              placeholder="Beschreibung um deinene Dienstleitung den Benutzern vorzustellen."
               cols="0"
               rows="16"
               onChange={handleChange}
             ></textarea>
-            <button onClick={handleSubmit}>Create</button>
+            <button onClick={handleSubmit}>Erstellen</button>
           </div>
           <div className="details">
-            <label htmlFor="">Service Title</label>
+            <label htmlFor="">Service Titel</label>
             <input
               type="text"
               name="shortTitle"
-              placeholder="e.g. One-page web design"
+              placeholder="Moderne Website"
               onChange={handleChange}
             />
-            <label htmlFor="">Short Description</label>
+            <label htmlFor="">Kurzbeschreibung</label>
             <textarea
               name="shortDesc"
               onChange={handleChange}
               id=""
-              placeholder="Short description of your service"
+              placeholder="Kurze Beschribung von deiner Dienstleistung."
               cols="30"
               rows="10"
             ></textarea>
-            <label htmlFor="">Delivery Time (e.g. 3 days)</label>
+            <label htmlFor="">Erleldigungsfrist in Tagen.</label>
             <input type="number" name="deliveryTime" onChange={handleChange} />
-            <label htmlFor="">Revision Number</label>
+            <label htmlFor="">Transaktionsnumber</label>
             <input
               type="number"
               name="revisionNumber"
               onChange={handleChange}
             />
-            <label htmlFor="">Add Features</label>
+            <label htmlFor="">Merkmale Hinzufügen</label>
             <form action="" className="add" onSubmit={handleFeature}>
-              <input type="text" placeholder="e.g. page design" />
+              <input type="text" placeholder="z.b. Siten Design" />
               <button type="submit">add</button>
             </form>
             <div className="addedFeatures">
@@ -158,7 +158,7 @@ const Add = () => {
                 </div>
               ))}
             </div>
-            <label htmlFor="">Price</label>
+            <label htmlFor="">Preis</label>
             <input type="number" onChange={handleChange} name="price" />
           </div>
         </div>
