@@ -12,12 +12,12 @@ function Home() {
     <div className="home">
       <Featured />
       {/* <TrustedBy /> */}
-      <Slide slidesToShow={5} arrowsScroll={5}>
+      <Slide title={"Dienstleistungen"} slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
         ))}
       </Slide>
-      <div className="features">
+      <div className="features dark">
         <div className="container">
           <div className="item">
             <h1>Eine menge grandioser Dienstleistungen, eifach abrufbar.</h1>
@@ -49,7 +49,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Slide slidesToShow={4} arrowsScroll={4}>
+      <Slide title={"Beliebte Dienstleister"} slidesToShow={4} arrowsScroll={4}>
         {projects.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
@@ -58,30 +58,31 @@ function Home() {
         <div className="container">
           <div className="item">
             <h1>
-              fiverr <i>business</i>
+              Sindesi <i>Pro</i>
             </h1>
             <h1>
-              A business solution designed for <i>teams</i>
+              Eine Businesslösung konzepiert für <i>teams</i>
             </h1>
             <p>
-              Upgrade to a curated experience packed with tools and benefits,
-              dedicated to businesses
+              Erlebe eine besseres arbeiten mit Sindesi mit exklusiven Werkzeugen, und weiteren Vorteilen
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Connect to freelancers with proven business experience
+              Verbinde dich mit Dienstleistern mit bewiesener Erfahrung.
             </div>
-
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Get matched with the perfect talent by a customer success manager
+              Umsatzberichte und Mitarbeiterplanung.
             </div>
-
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Manage teamwork and boost productivity with one powerful workspace
+              Empfehlungen von Sindesi Kundenberatern.
             </div>
-            <button>Explore Fiverr Business</button>
+            <div className="title">
+              <img src="./img/check.png" alt="" />
+              Proirity Support.
+            </div>
+            <button>Erfahre mehr über Sindesi Pro</button>
           </div>
           <div className="item">
             <img
