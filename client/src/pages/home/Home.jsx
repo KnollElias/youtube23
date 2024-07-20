@@ -37,7 +37,7 @@ function Home() {
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Geschützte bezahlungen, jedes mal.
+              Geschützte bezahlungen.
             </div>
             <p>
               Immer im Voraus wissen, was bezahlt wird.
