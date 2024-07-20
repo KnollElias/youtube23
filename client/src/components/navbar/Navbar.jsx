@@ -50,7 +50,7 @@ function Navbar() {
         <div className="links">
           {/* <span>Fiverr Business</span>
           <span>Explore</span> */}
-          <span>Warum Sindesi</span>
+          {/* <span>Warum Sindesi</span> */}
           {!currentUser?.isSeller && <span>Provider werden</span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
@@ -61,21 +61,24 @@ function Navbar() {
                   {currentUser.isSeller && (
                     <>
                       <Link className="link" to="/mygigs">
-                        Gigs
+                        Dienstleistungen
                       </Link>
                       <Link className="link" to="/add">
                         Neue Dienstleistung erstellen
                       </Link>
                     </>
                   )}
+              <Link className="link" to="/gigs">
+                Dienstleistungen
+              </Link>
                   <Link className="link" to="/orders">
-                    Orders
+                    Bestellungen
                   </Link>
                   <Link className="link" to="/messages">
-                    Messages
+                    Nachrichten
                   </Link>
                   <Link className="link" onClick={handleLogout}>
-                    Logout
+                    Abmelden
                   </Link>
                 </div>
               )}

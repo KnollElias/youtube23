@@ -8,48 +8,49 @@ function Footer() {
         <div className="top">
           <div className="item">
             <h2>Kategorien</h2>
-            <span>Graphics & Design</span>
-            <span>Digital Marketing</span>
-            <span>Writing & Translation</span>
+            <span>Grafik & Design</span>
+            <span>Digitales Marketing</span>
+            <span>Text & Übersetzung</span>
             <span>Video & Animation</span>
-            <span>Music & Audio</span>
-            <span>Programming & Tech</span>
-            <span>Data</span>
+            <span>Musik & Audio</span>
+            <span>Programmierung & Technik</span>
+            <span>Daten</span>
             <span>Business</span>
-            <span>Lifestyle</span>
-            <span>Photography</span>
+            <span>Persönliches Wachstum & Hobbys</span>
+            <span>Fotografie</span>
+            <span>End-to-End-Projekte</span>
             <span>Sitemap</span>
           </div>
           <div className="item">
             <h2>Über Uns</h2>
-            <span>Press & News</span>
-            <span>Partnerships</span>
-            <span>Privacy Policy</span>
-            <span>Terms of Service</span>
-            <span>Intellectual Property Claims</span>
-            <span>Investor Relations</span>
-            <span>Contact Sales</span>
+            {/* <span>Karriere</span> */}
+            <span>Presse & Neuigkeiten</span>
+            <span>Partnerschaften</span>
+            <span>Datenschutz</span>
+            <span>Nutzungsbedingungen</span>
+            <span>Impressum</span>
+            <span>Investor:innen</span>
           </div>
           <div className="item">
-            <h2>Support</h2>
-            <span>Help & Support</span>
-            <span>Trust & Safety</span>
-            <span>Selling on Fiverr</span>
-            <span>Buying on Fiverr</span>
+            <h2>Support und Bildung</h2>
+            <span>Hilfe & Support</span>
+            <span>Feedback & Kontakt</span>
+            {/* <span>Vertrauen & Sicherheit</span> */}
+            <span>Qualitätsleitfaden</span>
+            <span>Verkaufen auf Sindesi</span>
+            <span>Kaufen auf Sindesi</span>
           </div>
           <div className="item">
             <h2>Community</h2>
-            <span>Customer Success Stories</span>
-            <span>Community hub</span>
+            {/* <span>Erfolgsgeschichten von Kunden</span> */}
+            <span>Community-Hub</span>
             <span>Forum</span>
-            <span>Events</span>
+            <span>Veranstaltungen</span>
             <span>Blog</span>
-            <span>Influencers</span>
-            <span>Affiliates</span>
-            <span>Podcast</span>
-            <span>Invite a Friend</span>
-            <span>Become a Seller</span>
-            <span>Community Standards</span>
+            <span>Dienstleister</span>
+            <span>Affiliate</span>
+            <span>Freunde einladen</span>
+            <span>Community-Standards</span>
           </div>
         </div>
         <hr />

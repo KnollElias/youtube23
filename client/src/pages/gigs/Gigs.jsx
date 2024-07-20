@@ -18,14 +18,12 @@ function Gigs() {
     queryFn: () =>
       newRequest
         .get(
-          `/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
+          `/gigs` // ${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}
         )
         .then((res) => {
           return res.data;
         }),
   });
-
-  console.log(data);
 
   const reSort = (type) => {
     setSort(type);
@@ -36,6 +34,16 @@ function Gigs() {
     refetch();
   }, [sort]);
 
+  // useEffect(() => {
+  //   console.log("Data length is: " + data.length())
+  //   if (data === undefined) {
+  //     console.log("loading res data from");
+  //     data = newRequest.get(`/gigs`).then((res) => {
+  //       return res.data;
+  //     });
+  //   }
+  // }, [data]);
+
   const apply = () => {
     refetch();
   };
@@ -43,41 +51,41 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr > Graphics & Design ></span>
-        <h1>AI Artists</h1>
+        {/* <span className="breadcrumbs">Liverr > Graphics & Design ></span> */}
+        <h1>AI Artists (Kategorie)</h1>
         <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
+          Kategorie Beschreibung: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div className="menu">
           <div className="left">
             <span>Budget</span>
-            <input ref={minRef} type="number" placeholder="min" />
-            <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Apply</button>
+            <input ref={minRef} type="number" placeholder="von" />
+            <input ref={maxRef} type="number" placeholder="bis" />
+            <button onClick={apply}>Anwenden</button>
           </div>
           <div className="right">
-            <span className="sortBy">Sort by</span>
+            <span className="sortBy">Sortieren</span>
             <span className="sortType">
-              {sort === "sales" ? "Best Selling" : "Newest"}
+              {sort === "sales" ? "Beliebteste" : "Neuste"}
             </span>
             <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
             {open && (
               <div className="rightMenu">
                 {sort === "sales" ? (
-                  <span onClick={() => reSort("createdAt")}>Newest</span>
+                  <span onClick={() => reSort("createdAt")}>Neuste</span>
                 ) : (
-                  <span onClick={() => reSort("sales")}>Best Selling</span>
+                  <span onClick={() => reSort("sales")}>Beliebteste</span>
                 )}
-                <span onClick={() => reSort("sales")}>Popular</span>
+                <span onClick={() => reSort("sales")}>Meist Gebucht</span>
               </div>
             )}
           </div>
         </div>
         <div className="cards">
           {isLoading
-            ? "loading"
+            ? "laden"
             : error
-            ? "Something went wrong!"
+            ? "etwas ist schief gelaufen :("
             : data.map((gig) => <GigCard key={gig._id} item={gig} />)}
         </div>
       </div>
