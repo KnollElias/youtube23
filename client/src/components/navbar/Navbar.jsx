@@ -87,7 +87,7 @@ function Navbar() {
             <>
               <Link to="/login" className="link">Anmelden</Link>
               <Link className="link" to="/register">
-                <button>Registrieren</button>
+                Registrieren
               </Link>
             </>
           )}

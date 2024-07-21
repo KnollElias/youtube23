@@ -13,14 +13,11 @@
     background-color: white;
     color: black;
 
-    button {
-      background-color: white !important;
-      color: rgb(56, 127, 215) !important;
-      border: 1px solid rgb(56, 127, 215) !important;
-    }
-
     .container {
       .logo {
+        // &:hover {
+        //   background-image: linear-gradient(to right, rgb(2, 119, 214), rgb(53, 185, 188));
+        // }
         a {
           #dl {
             display: block;
@@ -29,6 +26,9 @@
             display: none;
           }
         }
+//         &:hover {
+// color: linear-gradient(to right, rgb(2, 119, 214), rgb(53, 185, 188));
+//         }
       }
     }
   }
@@ -115,6 +115,12 @@
         }
       }
 
+      // .link {
+      //   &:hover {
+      //     background-image: linear-gradient(to right, rgb(2, 119, 214), rgb(53, 185, 188));
+      //   }
+      // }
+
       button {
         color: white;
         padding: 10px 20px;
@@ -123,12 +129,6 @@
         background-color: transparent;
         cursor: pointer;
 
-        &:hover {
-          // background-color: #1dbf73;
-          // border-color: #1dbf73;
-          background-color: rgb(56, 127, 215);
-          border-color: rgb(56, 127, 215);
-        }
       }
     }
   }
